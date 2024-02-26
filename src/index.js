@@ -24,7 +24,7 @@ app.use(express.static(join(__dirname,'public')))
 // se movieron los app.get() a ./src/routes/index.js 
 
 
-app.listen(3000)
-console.log('Servidor escuchando por Puerto: ',3000);
+app.listen(process.env.PORT || 3000)
+console.log('Servidor escuchando por Puerto: ',process.env.PORT || 3000);
 
 
